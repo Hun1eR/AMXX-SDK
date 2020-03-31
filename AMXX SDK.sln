@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMXX SDK", "msvc\AMXX SDK.vcxproj", "{844B2D31-64AF-4A62-96B3-EB8502CBA717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{844B2D31-64AF-4A62-96B3-EB8502CBA717}.Debug|x86.ActiveCfg = Debug|Win32
+		{844B2D31-64AF-4A62-96B3-EB8502CBA717}.Debug|x86.Build.0 = Debug|Win32
+		{844B2D31-64AF-4A62-96B3-EB8502CBA717}.Release|x86.ActiveCfg = Release|Win32
+		{844B2D31-64AF-4A62-96B3-EB8502CBA717}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3C6786-4016-4835-B219-7CFAC7059BCD}
+	EndGlobalSection
+EndGlobal

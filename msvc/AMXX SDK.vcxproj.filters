@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="amxx">
+      <UniqueIdentifier>{1aaecf39-1e93-4f56-ad2e-2c31e46600fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="amxx\include">
+      <UniqueIdentifier>{321ea3a5-e4b3-4803-ab15-ecd27a441eab}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="amxx\src">
+      <UniqueIdentifier>{4fcfbdf9-b159-4224-b236-e0cc18d8919f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\amxx\include\amxx\amx.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\amxx\include\amxx\game_configs.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\amxx\include\amxx\string.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\amxx\include\amxx\amxx_config.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\amxx\include\amxx\api.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\amxx\src\amxx_api.cpp">
+      <Filter>amxx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\amxx\src\amxx_string.cpp">
+      <Filter>amxx\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
