@@ -218,7 +218,7 @@ const char* filename_from_path(const char* const path)
 {
 	if (!path)
 		return path;
-	
+
 	std::size_t index = 0;
 
 #ifdef _WIN32
