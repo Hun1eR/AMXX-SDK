@@ -384,7 +384,7 @@ struct AmxxApiFuncPointers {
 #else
 	void* (*get_player_edict)(int id){};
 #endif
-	void* (*player_prop_address)(int id, int prop){};
+	void* (*player_prop_address)(int id, PlayerProp prop){};
 	int (*amx_exec)(Amx* amx, cell* return_val, int index){};
 	int (*amx_exec_v)(Amx* amx, cell* return_val, int index, int num_params, cell params[]){};
 	int (*amx_allot)(Amx* amx, int length, cell* amx_address, cell** phys_address){};
@@ -800,7 +800,7 @@ public:
 
 	/// <summary>
 	/// </summary>
-	static void* player_prop_address(const int id, const int prop)
+	static void* player_prop_address(const int id, const PlayerProp prop)
 	{
 		return amxx_api_funcs_.player_prop_address(id, prop);
 	}
