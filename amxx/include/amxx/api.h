@@ -78,6 +78,11 @@ constexpr auto BLOCK_SET = 2;
 /// </summary>
 enum class AmxxStatus : int {
 	/// <summary>
+	/// <para>Something went wrong.</para>
+	/// </summary>
+	Failed = -1,
+	
+	/// <summary>
 	/// <para>No error.</para>
 	/// </summary>
 	Ok = 0,
