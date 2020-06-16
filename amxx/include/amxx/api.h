@@ -33,6 +33,8 @@
 #undef FASTCALL
 #if defined _WIN32
 #define DLLEXPORT __declspec(dllexport)  // NOLINT(cppcoreguidelines-macro-usage)
+#elif defined __clang__
+#define DLLEXPORT __attribute__ ((visibility ("default")))
 #else
 #define DLLEXPORT __attribute__ ((visibility ("default"), externally_visible))
 #endif
@@ -81,7 +83,7 @@ enum class AmxxStatus : int {
 	/// <para>Something went wrong.</para>
 	/// </summary>
 	Failed = -1,
-	
+
 	/// <summary>
 	/// <para>No error.</para>
 	/// </summary>
