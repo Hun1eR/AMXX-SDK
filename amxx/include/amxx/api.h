@@ -1047,6 +1047,19 @@ public:
 		return amxx_api_funcs_.set_amx_string_utf8_char(amx, amx_address, source, source_len, max_len);
 	}
 #endif
+
+	/// <summary>
+	/// </summary>
+	static int read_flags(const char* string)
+	{
+		auto flags = 0;
+
+		while (*string) {
+			flags |= 1 << (*string++ - 'a');
+		}
+
+		return flags;
+	}
 };
 
 #ifdef AMXX_QUERY
