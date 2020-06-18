@@ -18,7 +18,7 @@
 #include <amxx/game_configs.h>
 #endif
 
-#if defined USE_METAMOD
+#ifdef USE_METAMOD
 #include <cssdk/engine/edict.h>
 #include <metamod/os_dep.h>
 #else
@@ -31,19 +31,30 @@
 #undef DLLEXPORT
 #undef NOINLINE
 #undef FASTCALL
-#if defined _WIN32
+#undef FORCEINLINE_STATIC
+#ifdef _WIN32
 #define DLLEXPORT __declspec(dllexport)  // NOLINT(cppcoreguidelines-macro-usage)
 #elif defined __clang__
-#define DLLEXPORT __attribute__ ((visibility ("default")))
+#define DLLEXPORT __attribute__((visibility ("default")))  // NOLINT(cppcoreguidelines-macro-usage)
 #else
-#define DLLEXPORT __attribute__ ((visibility ("default"), externally_visible))
+#define DLLEXPORT __attribute__((visibility ("default"), externally_visible))  // NOLINT(cppcoreguidelines-macro-usage)
 #endif
 #ifdef _WIN32
 #define NOINLINE __declspec(noinline)  // NOLINT(cppcoreguidelines-macro-usage)
+#else
+#define NOINLINE __attribute__((noinline))  // NOLINT(cppcoreguidelines-macro-usage)
+#endif
+#ifdef _WIN32
 #define FASTCALL __fastcall  // NOLINT(cppcoreguidelines-macro-usage)
 #else
-#define NOINLINE __attribute__ ((noinline))
-#define FASTCALL
+#define FASTCALL  // NOLINT(cppcoreguidelines-macro-usage)
+#endif
+#ifdef _WIN32
+#define FORCEINLINE_STATIC FORCEINLINE static  // NOLINT(cppcoreguidelines-macro-usage)
+#else
+#undef FORCEINLINE
+#define FORCEINLINE __attribute__((always_inline)) inline  // NOLINT(cppcoreguidelines-macro-usage)
+#define FORCEINLINE_STATIC __attribute__((always_inline)) static inline  // NOLINT(cppcoreguidelines-macro-usage)
 #endif
 #endif
 
