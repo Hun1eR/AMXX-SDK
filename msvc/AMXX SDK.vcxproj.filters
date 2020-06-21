@@ -37,7 +37,7 @@
     <ClCompile Include="..\amxx\src\amxx_api.cpp">
       <Filter>amxx\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\amxx\src\amxx_string.cpp">
+    <ClCompile Include="..\amxx\src\string.cpp">
       <Filter>amxx\src</Filter>
     </ClCompile>
   </ItemGroup>

@@ -142,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\amxx\src\amxx_api.cpp" />
-    <ClCompile Include="..\amxx\src\amxx_string.cpp" />
+    <ClCompile Include="..\amxx\src\string.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
