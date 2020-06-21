@@ -141,7 +141,7 @@
     <ClInclude Include="..\amxx\include\amxx\string.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\amxx\src\amxx_api.cpp" />
+    <ClCompile Include="..\amxx\src\api.cpp" />
     <ClCompile Include="..\amxx\src\string.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

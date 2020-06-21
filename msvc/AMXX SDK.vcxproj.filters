@@ -34,10 +34,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\amxx\src\amxx_api.cpp">
+    <ClCompile Include="..\amxx\src\string.cpp">
       <Filter>amxx\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\amxx\src\string.cpp">
+    <ClCompile Include="..\amxx\src\api.cpp">
       <Filter>amxx\src</Filter>
     </ClCompile>
   </ItemGroup>
