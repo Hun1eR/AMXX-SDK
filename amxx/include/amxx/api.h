@@ -10,7 +10,6 @@
 
 #include <amxx/amx.h>
 #include <amxx/amxx_config.h>
-#include <cstddef>
 #include <type_traits>
 #include <utility>
 
