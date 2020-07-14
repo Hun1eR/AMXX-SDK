@@ -595,7 +595,7 @@ struct Amx {
 /// </summary>
 inline cell amx_ftoc(const real& value)
 {
-	return *reinterpret_cast<const cell*>(&value);
+	return *reinterpret_cast<const cell*>(&value); // cppcheck-suppress invalidPointerCast
 }
 
 /// <summary>
@@ -603,12 +603,12 @@ inline cell amx_ftoc(const real& value)
 /// </summary>
 inline real amx_ctof(const cell& value)
 {
-	return *reinterpret_cast<const real*>(&value);
+	return *reinterpret_cast<const real*>(&value); // cppcheck-suppress invalidPointerCast
 }
 
 /// <summary>
 /// </summary>
 inline cell* amx_address(const Amx* amx, const ucell address)
 {
-	return reinterpret_cast<cell*>(amx->base + reinterpret_cast<const AmxHeader*>(amx->base)->dat + address);
+	return reinterpret_cast<cell*>(amx->base + reinterpret_cast<const AmxHeader*>(amx->base)->dat + address); // cppcheck-suppress invalidPointerCast
 }
