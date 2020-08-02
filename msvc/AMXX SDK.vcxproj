@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\amxx\include\amxx\amx.h" />
+    <ClInclude Include="..\amxx\include\amxx\amxx.h" />
     <ClInclude Include="..\amxx\include\amxx\amxx_config.h" />
     <ClInclude Include="..\amxx\include\amxx\game_configs.h" />
     <ClInclude Include="..\amxx\include\amxx\api.h" />

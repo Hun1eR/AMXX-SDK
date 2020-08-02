@@ -32,6 +32,9 @@
     <ClInclude Include="..\amxx\include\amxx\api.h">
       <Filter>amxx\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\amxx\include\amxx\amxx.h">
+      <Filter>amxx\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\amxx\src\string.cpp">
