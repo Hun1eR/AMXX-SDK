@@ -19,7 +19,7 @@
 
 #ifdef USE_METAMOD
 #include <cssdk/engine/edict.h>
-#include <metamod/os_defs.h>
+#include <cssdk/public/os_defs.h>
 #else
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
