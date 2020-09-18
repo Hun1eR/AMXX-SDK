@@ -190,7 +190,7 @@ extern "C" AmxxStatus DLLEXPORT AMXX_Detach()
 
 /// <summary>
 /// </summary>
-extern "C" AmxxStatus DLLEXPORT AMXX_PluginsLoaded()
+extern "C" AmxxStatus DLLEXPORT AMXX_PluginsLoaded() //-V524
 {
 #ifdef AMXX_PLUGINS_LOADED
 	AMXX_PLUGINS_LOADED();

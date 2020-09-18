@@ -9,6 +9,8 @@
 #include <amxx/string.h>
 #include <cstring>
 
+//-V::112
+
 namespace amx
 {
 	/// <summary>

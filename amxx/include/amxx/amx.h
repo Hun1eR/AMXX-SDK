@@ -12,6 +12,8 @@
 #include <cstddef>
 #include <cstdint>
 
+//-V::122
+
 #if !defined AMX_NATIVE_CALL
 #define AMX_NATIVE_CALL
 #endif
@@ -518,7 +520,7 @@ struct Amx {
 
 	/// <summary>
 	/// </summary>
-	long user_tags[AMX_USER_NUM] PACKED;
+	long user_tags[AMX_USER_NUM] PACKED; //-V126
 
 	/// <summary>
 	/// </summary>
@@ -577,7 +579,7 @@ struct Amx {
 	/// <summary>
 	/// <para>Estimated memory footprint of the native code.</para>
 	/// </summary>
-	long code_size PACKED;
+	long code_size PACKED; //-V126
 } PACKED;
 
 #if !defined AMX_NO_ALIGN
@@ -610,5 +612,6 @@ inline real amx_ctof(const cell& value)
 /// </summary>
 inline cell* amx_address(const Amx* amx, const ucell address)
 {
+	//-V:address:104, 206
 	return reinterpret_cast<cell*>(amx->base + reinterpret_cast<const AmxHeader*>(amx->base)->dat + address); // cppcheck-suppress invalidPointerCast
 }
