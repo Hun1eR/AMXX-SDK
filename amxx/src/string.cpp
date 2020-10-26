@@ -180,7 +180,10 @@ namespace amx
 				c = rhs[++i];
 			}
 
-			i -= check_valid_char(&c_str_[i - 1]);
+			if (i > 0) {
+				i -= check_valid_char(&c_str_[i - 1]);
+			}
+
 			address_[i] = c_str_[i] = '\0'; // NOLINT(bugprone-signed-char-misuse)
 		}
 
